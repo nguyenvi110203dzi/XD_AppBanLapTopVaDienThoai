@@ -1,0 +1,9 @@
+// .sequelizerc
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('config', 'config.json'), // Đường dẫn file cấu hình DB
+  'models-path': path.resolve('models'),           // Đường dẫn thư mục models
+  'seeders-path': path.resolve('seeders'),         // Đường dẫn thư mục seeders
+  'migrations-path': path.resolve('migrations')    // Đường dẫn thư mục migrations (chưa dùng nhưng nên có)
+};
